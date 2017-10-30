@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>Hoja de vida - Educación</title>
+</head>
+<body>
+	<header>
+		<svg width="150" height="70">
+			<image width="150" height="70" xlink:href="img/logo.svg"></image>
+		</svg>
+		<h1>Hoja de Vida</h1>
+		<h2>Ismael Alberto Suárez Pardo</h2>
+		<h3>15/11/1987 - Bogotá, Colombia</h3>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="educacion.html">Educación</a></li>
+			<li><a href="experiencia.html">Experiencia</a></li>
+		</ul>
+	</nav>
+	<section id="contenido">
+		<h2>Educación</h2>
+		<table border="2px" cellpadding="2px">
+			<thead>
+				<tr>
+					<th>Año</th>
+					<th>Institución</th>
+					<th>Lugar</th>
+					<th>Título</th>
+					<th>¿Culminó?</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2015</td>
+					<td>SENA</td>
+					<td>Bogotá, Colombia</td>
+					<td>Analista y Desarrollador de Sistemas de Información</td>
+					<td>Si</td>
+				</tr>
+				<tr>
+					<td>2009</td>
+					<td>Fundación CIDCA</td>
+					<td>Bogotá, Colombia</td>
+					<td>Tecnólogo en Electrónica</td>
+					<td>Si</td>
+				</tr>
+				<tr>
+					<td>2003</td>
+					<td>I. T. D. Laureano Gómez C.</td>
+					<td>Bogotá, Colombia</td>
+					<td>Bachiller Técnico en Electricidad y Electrónica</td>
+					<td>Si</td>
+				</tr>
+			</tbody>
+		</table>
+		<form id="form-educacion">
+			<h3>Agregar estudio</h3>
+			<label for="slc-anio"><strong>Año: </strong></label>
+			<select id="slc-anio">
+				<option value="2017">2017</option>
+				<option value="2016">2016</option>
+				<option value="2015">2015</option>
+				<option value="2014">2014</option>
+				<option value="2013">2013</option>
+				<option value="2012">2012</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+			</select><br/>
+			<label for="txt-instituto"><strong>Institución: </strong></label>
+			<input type="text" id="txt-instituto" name="txt-instituto" /><br/>
+			<label for="txt-lugar"><strong>Lugar: </strong></label>
+			<input type="text" id="txt-lugar" name="txt-lugar" /><br/>
+			<label for="txt-titulo"><strong>Título: </strong></label>
+			<textarea id="txt-titulo" name="txt-titulo" cols="30" rows="4"></textarea><br/>
+			<label for="txt-culmino"><strong>¿Culminó?: </strong></label>
+			<input type="radio" id="txt-culmino" name="txt-culmino" value="si" />Si
+			<input type="radio" id="txt-culmino" name="txt-culmino" value="no" />No<br/>
+			<button type="submit">Agregar</button>
+		</form>
+	</section>
+	<footer>
+		<span><strong>Correo: </strong><a>ismael58823@hotmail.com</a> - <strong>Télefono: </strong>(+57) 317 872 7030</span>
+	</footer>
+</body>
+</html>
